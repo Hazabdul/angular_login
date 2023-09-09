@@ -1,0 +1,16 @@
+h1{margin-left: 10px;
+color: coral;}
+h3{margin-left: 10px;}
+h1{font-weight: 500;}
+.cards {
+    display: flex;             /* Use flex display */
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    align-items: center;       /* Vertically center items */
+  }
+ 
+  
+  /* Apply the hover effect to the mat-card */
+  mat-card.enlarge-on-hover:hover {
+    transform: scale(1.2); /* Enlarge the mat-card when hovered */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+  }

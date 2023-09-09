@@ -1,0 +1,28 @@
+<div class="m" *ngIf="!loggedIn">
+    <div class="">
+        <img src="" alt="">
+    </div>
+    <div class="main">  
+        	
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+            <div class="signup">
+                <form >
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="txt" placeholder="User name" required="" [(ngModel)]="signupobj.userName">
+                    <input type="email" name="email" placeholder="Email" required="" [(ngModel)]="signupobj.email">
+                    <input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="signupobj.password">
+                    <button (click)="onSignup()">Sign up</button>
+                </form>
+            </div>
+            loginOb
+            <div class="login">
+                <form (submit)="onLogin()">
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="text" name="username" placeholder="username" required="true" [(ngModel)]="loginObj.userName">
+                    <input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="loginObj.password">
+                    <button (click)="onLogin()" >Login</button>
+                </form>
+            </div>
+    </div>
+</div>
